@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id "io.qameta.allure" version "2.8.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testImplementation("com.codeborne:selenide:5.20.3",
+            "org.junit.jupiter:junit-jupiter-api:5.7.2",
+            "org.aspectj:aspectjweaver:1.9.6",
+            "io.qameta.allure:allure-selenide:2.14.0"
+
+    )
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.7.2',
+            "org.slf4j:slf4j-simple:1.7.30",
+            "org.slf4j:slf4j-api:1.7.30")
+}
+
+allure {
+    version = '2.14.0'
+    aspectjweaver = true
+    autoconfigure = true
+
+    useJUnit5 {
+        version = '2.14.0'
+    }
+}
+test {
+    useJUnitPlatform()
+}
