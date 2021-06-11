@@ -81,9 +81,7 @@ public class IssueFindTests {
 
     @Test
     public void warning() {
-        System.out.println("Это вторжение!!! Я поставил ниже лишнюю скобку и проект больше не запустится никогда!");
-        System.out.println("Ха-ха-ха! =))");
-        }
+        System.out.println("Это вторжение!!! Но мирное! =)");
+        System.out.println("Во имя знаний! =))");
     }
-
 }
