@@ -79,4 +79,11 @@ public class IssueFindTests {
         steps.makeScreenshot();
     }
 
+    @Test
+    public void warning() {
+        System.out.println("Это вторжение!!! Я поставил ниже лишнюю скобку и проект больше не запустится никогда!");
+        System.out.println("Ха-ха-ха! =))");
+        }
+    }
+
 }
