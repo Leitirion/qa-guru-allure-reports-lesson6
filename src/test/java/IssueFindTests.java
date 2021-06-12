@@ -79,4 +79,9 @@ public class IssueFindTests {
         steps.makeScreenshot();
     }
 
+    @Test
+    public void warning() {
+        System.out.println("Это вторжение!!! Но мирное! =)");
+        System.out.println("Во имя знаний! =))");
+    }
 }
